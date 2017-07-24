@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4 text-center" >
+            <h1>Register</h1>
+            <form name="splitgo-login-form" 
+                data-ng-submit="mc.doRegistration()" 
+                role="form">
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <input id="name" 
+                            name="name"
+                            type="text"
+                            placeholder="Enter Your Name"
+                            data-ng-model="mc.regModel.name"
+                            class="form-control input-lg">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <input id="email" 
+                            name="email"
+                            type="text"
+                            placeholder="Enter Your Email ID"
+                            data-ng-model="mc.regModel.email"
+                            class="form-control input-lg">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <input id="phone" 
+                            name="phone"
+                            placeholder="Enter 10-Digit Phone Number"
+                            type="number"
+                            data-ng-model="mc.regModel.phone"
+                            class="form-control input-lg">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Gender<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li data-ng-click="mc.regModel.gender='M'"><a href="">Male</a></li>
+                                <li data-ng-click="mc.regModel.gender='F'"><a href="">Female</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <input id="password" 
+                            name="password"
+                            placeholder="Enter Desired Password"
+                            type="password"
+                            data-ng-model="mc.regModel.password"
+                            class="form-control input-lg">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <input id="passwordre" 
+                            name="passwordre"
+                            placeholder="Verify Password"
+                            type="passwordre"
+                            data-ng-model="mc.regModel.passwordre"
+                            class="form-control input-lg">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <button type="submit" class="btn btn-default btn-lg">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
