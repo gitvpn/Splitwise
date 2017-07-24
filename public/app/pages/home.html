@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4 text-center" >
+            <h1>Login</h1>
+            <form name="splitgo-login-form" 
+                data-ng-submit="mc.doLogin()" 
+                role="form">
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <input id="email" 
+                            name="email"
+                            type="text"
+                            data-ng-model="mc.loginModel.email"
+                            class="form-control input-lg">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <input id="password" 
+                            name="password"
+                            type="text"
+                            data-ng-model="mc.loginModel.password"
+                            class="form-control input-lg">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <button class="btn btn-default btn-lg">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
